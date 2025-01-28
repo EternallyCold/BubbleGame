@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D physicsBody = null;
-    public float speed = 4f;
+    public float speed = 0f;
     public Collider2D groundSensor = null;
     public LayerMask groundLayer = 0;
 
