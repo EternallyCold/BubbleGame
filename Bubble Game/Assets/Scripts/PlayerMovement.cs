@@ -6,8 +6,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D physicsBody = null;
-    public float speed = 0f;
-    public Collider2D groundSensor = null;
+    public float speed = 3f;
+    public Collider2D BarrierSensor = null;
     public LayerMask groundLayer = 0;
 
     // awake is called before start
