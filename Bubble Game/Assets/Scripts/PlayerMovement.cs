@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void MoveRight()
     {
-        //physicsBody.velocity.x = -1;
+        //physicsBody.velocity.x = 1;
 
         // make a variable to hold our velocity
         // get the velocity from the rigidbody
@@ -44,7 +44,10 @@ public class PlayerMovement : MonoBehaviour
 
     public void MoveUp()
     {
-        //physicsBody
+        //physicsBody.velocity.y = 1;
+
+        // make a variable to hold our velocity
+        // get the velocity from the rigidbody
 
         Vector2 newVelocity = physicsBody.velocity;
         newVelocity.y = speed;
@@ -54,10 +57,13 @@ public class PlayerMovement : MonoBehaviour
 
     public void MoveDown()
     {
-        //physicsBody
+        //physicsBody.velocity.y = -1;
+
+        // make a variable to hold our velocity
+        // get the velocity from the rigidbody
 
         Vector2 newVelocity = physicsBody.velocity;
-        newVelocity.y = speed;
+        newVelocity.y = -speed;
 
         physicsBody.velocity = newVelocity;
     }
