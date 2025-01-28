@@ -68,4 +68,27 @@ public class PlayerMovement : MonoBehaviour
         physicsBody.velocity = newVelocity;
     }
 
+    private void FixedUpdate()
+    {
+        if (Input.GetAxis("Horizontal") < 0)
+        {
+            MoveLeft();
+        }
+
+        if (Input.GetAxis("Horizontal") > 0)
+        {
+            MoveRight();
+        }
+
+        if (Input.GetAxis("Vertical") > 0)
+        {
+            MoveUp();
+        }
+
+        if (Input.GetAxis("Vertical") < 0)
+        {
+            MoveDown();
+        }
+    }
+
 }
