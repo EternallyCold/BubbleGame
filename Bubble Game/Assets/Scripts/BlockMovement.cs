@@ -6,8 +6,8 @@ using UnityEngine;
 public class BlockMovement : MonoBehaviour
 {
     private Rigidbody2D physicsBody = null;
-    public float speed = 4f;
-    public Collider2D groundSensor = null;
+    public float speed = 3f;
+    public Collider2D BarrierSensor = null;
     public LayerMask groundLayer = 0;
 
     // awake is called before start
@@ -67,5 +67,4 @@ public class BlockMovement : MonoBehaviour
 
         physicsBody.velocity = newVelocity;
     }
-
 }
