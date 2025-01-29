@@ -10,8 +10,11 @@ public class CollisionSceneChange : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("SceneChange"))
+        Debug.Log("Scene Col");
+        if (collision.gameObject.CompareTag("Player"))
+        {
             SceneManager.LoadScene(SceneName);
-        Debug.Log("I have scene CHANGED!!");
+            Debug.Log("I have scene CHANGED!!");
+        }
     }
 }
