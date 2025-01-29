@@ -134,7 +134,6 @@ GameObject:
   - component: {fileID: 92439570}
   - component: {fileID: 92439569}
   - component: {fileID: 92439568}
-  - component: {fileID: 92439567}
   m_Layer: 0
   m_Name: JellyfishObstacle6
   m_TagString: Obstacle
@@ -142,23 +141,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &92439567
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 92439566}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7dc9b7e002948e4b89fb0b3f72ad30f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  physicsBody: {fileID: 0}
-  speed: 5
-  BarrierSensor: {fileID: 0}
-  groundLayer:
-    m_Bits: 0
 --- !u!61 &92439568
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2442,7 +2424,6 @@ GameObject:
   - component: {fileID: 239567327}
   - component: {fileID: 239567326}
   - component: {fileID: 239567325}
-  - component: {fileID: 239567324}
   m_Layer: 0
   m_Name: JellyfishObstacle2
   m_TagString: Obstacle
@@ -2450,23 +2431,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &239567324
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 239567323}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7dc9b7e002948e4b89fb0b3f72ad30f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  physicsBody: {fileID: 0}
-  speed: 5
-  BarrierSensor: {fileID: 0}
-  groundLayer:
-    m_Bits: 0
 --- !u!61 &239567325
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3079,7 +3043,6 @@ GameObject:
   - component: {fileID: 1133966678}
   - component: {fileID: 1133966677}
   - component: {fileID: 1133966676}
-  - component: {fileID: 1133966675}
   m_Layer: 0
   m_Name: JellyfishObstacle7
   m_TagString: Obstacle
@@ -3087,23 +3050,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1133966675
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1133966674}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7dc9b7e002948e4b89fb0b3f72ad30f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  physicsBody: {fileID: 0}
-  speed: 5
-  BarrierSensor: {fileID: 0}
-  groundLayer:
-    m_Bits: 0
 --- !u!61 &1133966676
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3255,7 +3201,6 @@ GameObject:
   - component: {fileID: 1338806188}
   - component: {fileID: 1338806187}
   - component: {fileID: 1338806186}
-  - component: {fileID: 1338806185}
   m_Layer: 0
   m_Name: JellyfishObstacle1
   m_TagString: Obstacle
@@ -3263,23 +3208,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1338806185
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1338806184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7dc9b7e002948e4b89fb0b3f72ad30f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  physicsBody: {fileID: 0}
-  speed: 5
-  BarrierSensor: {fileID: 0}
-  groundLayer:
-    m_Bits: 0
 --- !u!61 &1338806186
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3431,6 +3359,7 @@ GameObject:
   - component: {fileID: 1351164123}
   - component: {fileID: 1351164122}
   - component: {fileID: 1351164125}
+  - component: {fileID: 1351164126}
   m_Layer: 0
   m_Name: Mermaid
   m_TagString: SceneChange
@@ -3563,6 +3492,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: WinScreen
+--- !u!50 &1351164126
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351164121}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1361040809
 GameObject:
   m_ObjectHideFlags: 0
@@ -3575,7 +3531,6 @@ GameObject:
   - component: {fileID: 1361040813}
   - component: {fileID: 1361040812}
   - component: {fileID: 1361040811}
-  - component: {fileID: 1361040810}
   m_Layer: 0
   m_Name: JellyfishObstacle5
   m_TagString: Obstacle
@@ -3583,23 +3538,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1361040810
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1361040809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7dc9b7e002948e4b89fb0b3f72ad30f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  physicsBody: {fileID: 0}
-  speed: 5
-  BarrierSensor: {fileID: 0}
-  groundLayer:
-    m_Bits: 0
 --- !u!61 &1361040811
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3751,7 +3689,6 @@ GameObject:
   - component: {fileID: 1389711822}
   - component: {fileID: 1389711821}
   - component: {fileID: 1389711820}
-  - component: {fileID: 1389711824}
   m_Layer: 0
   m_Name: JellyfishObstacle
   m_TagString: Obstacle
@@ -3898,23 +3835,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1389711824
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1389711819}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7dc9b7e002948e4b89fb0b3f72ad30f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  physicsBody: {fileID: 0}
-  speed: 5
-  BarrierSensor: {fileID: 0}
-  groundLayer:
-    m_Bits: 0
 --- !u!1 &1439580793
 GameObject:
   m_ObjectHideFlags: 0
@@ -3926,7 +3846,6 @@ GameObject:
   - component: {fileID: 1439580795}
   - component: {fileID: 1439580794}
   - component: {fileID: 1439580798}
-  - component: {fileID: 1439580797}
   - component: {fileID: 1439580796}
   m_Layer: 0
   m_Name: Siren
@@ -4047,23 +3966,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9177127, y: 0.92799854}
   m_EdgeRadius: 0
---- !u!114 &1439580797
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1439580793}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7dc9b7e002948e4b89fb0b3f72ad30f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  physicsBody: {fileID: 0}
-  speed: 3
-  BarrierSensor: {fileID: 0}
-  groundLayer:
-    m_Bits: 0
 --- !u!50 &1439580798
 Rigidbody2D:
   serializedVersion: 4
@@ -4261,7 +4163,6 @@ GameObject:
   - component: {fileID: 1558546247}
   - component: {fileID: 1558546246}
   - component: {fileID: 1558546245}
-  - component: {fileID: 1558546244}
   m_Layer: 0
   m_Name: JellyfishObstacle3
   m_TagString: Obstacle
@@ -4269,23 +4170,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1558546244
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1558546243}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7dc9b7e002948e4b89fb0b3f72ad30f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  physicsBody: {fileID: 0}
-  speed: 5
-  BarrierSensor: {fileID: 0}
-  groundLayer:
-    m_Bits: 0
 --- !u!61 &1558546245
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4437,7 +4321,6 @@ GameObject:
   - component: {fileID: 1586797758}
   - component: {fileID: 1586797757}
   - component: {fileID: 1586797756}
-  - component: {fileID: 1586797755}
   m_Layer: 0
   m_Name: JellyfishObstacle4
   m_TagString: Obstacle
@@ -4445,23 +4328,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1586797755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1586797754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7dc9b7e002948e4b89fb0b3f72ad30f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  physicsBody: {fileID: 0}
-  speed: 5
-  BarrierSensor: {fileID: 0}
-  groundLayer:
-    m_Bits: 0
 --- !u!61 &1586797756
 BoxCollider2D:
   m_ObjectHideFlags: 0
