@@ -24,9 +24,12 @@ public class TimeCollisionAdd : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         // Check if the player collides with a specific object
-        if (collision.gameObject.CompareTag("Player"))
+        Debug.Log("Working ?");
+
+        if (collision.gameObject.CompareTag("Bubble"))
         {
             // Add time when colliding with the object
+            Debug.Log("Time was added ?");
             currentTime += timeToAdd;
 
             // Optionally, make sure the time doesn't go below the original time limit
@@ -37,9 +40,6 @@ public class TimeCollisionAdd : MonoBehaviour
 
             // Optionally, you can print out the remaining time for debugging
             Debug.Log("Time after collision: " + currentTime);
-
-            // Destroy the object after adding time (make sure time is added before destroying)
-            Destroy(collision.gameObject);
         }
     }
 }
