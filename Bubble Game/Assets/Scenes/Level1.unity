@@ -1032,6 +1032,7 @@ GameObject:
   - component: {fileID: 496913664}
   - component: {fileID: 496913668}
   - component: {fileID: 496913669}
+  - component: {fileID: 496913670}
   m_Layer: 6
   m_Name: PlayerChar
   m_TagString: Player
@@ -1207,6 +1208,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92b650397f3650641a01f7fb035ec59e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &496913670
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496913663}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 46206bd2a7d1ae74dae1c5a47683bc37, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &502362896
 GameObject:
   m_ObjectHideFlags: 0
@@ -3276,6 +3298,7 @@ GameObject:
   - component: {fileID: 1389711822}
   - component: {fileID: 1389711821}
   - component: {fileID: 1389711820}
+  - component: {fileID: 1389711824}
   m_Layer: 3
   m_Name: JellyfishObstacle
   m_TagString: Obstacle
@@ -3423,6 +3446,27 @@ Transform:
   - {fileID: 1786746497}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1389711824
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389711819}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8033d7bfb0312514389e147a54b552d4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1439580793
 GameObject:
   m_ObjectHideFlags: 0
@@ -3435,6 +3479,7 @@ GameObject:
   - component: {fileID: 1439580794}
   - component: {fileID: 1439580798}
   - component: {fileID: 1439580796}
+  - component: {fileID: 1439580799}
   m_Layer: 0
   m_Name: Siren
   m_TagString: Obstacle
@@ -3581,6 +3626,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!95 &1439580799
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439580793}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e0832608df617634b80b3b3cc32009a3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1451552773
 GameObject:
   m_ObjectHideFlags: 0
