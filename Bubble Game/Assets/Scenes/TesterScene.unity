@@ -1585,8 +1585,9 @@ GameObject:
   - component: {fileID: 1373680177}
   - component: {fileID: 1373680176}
   - component: {fileID: 1373680175}
-  - component: {fileID: 1373680180}
   - component: {fileID: 1373680179}
+  - component: {fileID: 1373680181}
+  - component: {fileID: 1373680182}
   m_Layer: 0
   m_Name: JellyfishUwU
   m_TagString: Player
@@ -1750,7 +1751,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.969697, y: 0.969697}
   m_EdgeRadius: 0
---- !u!114 &1373680180
+--- !u!114 &1373680181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1373680174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 579c74e1f545c204285b0db4105753a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeLimit: 30
+  timeToAdd: 5
+--- !u!114 &1373680182
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
