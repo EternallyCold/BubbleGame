@@ -34,4 +34,10 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;  // Resume time (unpause the game)
         isPaused = false;  // Set paused status to false
     }
+
+    public void QuitGame()
+    {
+        Debug.Log("Quit");
+        Application.Quit();
+    }
 }
