@@ -10,6 +10,10 @@ public class JellyfishCollisionDetector : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("JellyfishCollision"))
         {
+            JellyfishStop(gameObject.GetComponent<Rigidbody2D>());
+        }
+        else
+        {
 
         }
     }

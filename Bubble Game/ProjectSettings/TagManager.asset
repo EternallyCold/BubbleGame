@@ -8,6 +8,7 @@ TagManager:
   - Bubble
   - Sound
   - SceneChange
+  - JellyfishCollision
   layers:
   - Default
   - TransparentFX
@@ -15,7 +16,7 @@ TagManager:
   - JellyfishCollision
   - Water
   - UI
-  - 
+  - Player
   - 
   - 
   - 
