@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: SeaFloorTopEdgeTileUpdated2-1.png
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: 60b5fb9a7f215984197302fe133682e2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 80988a92be433a945b4a6ae1ff37a51b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
