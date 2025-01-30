@@ -1242,6 +1242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeLimit: 30
+  sceneToLoad: LoseScreen
 --- !u!1 &1115992968
 GameObject:
   m_ObjectHideFlags: 0
