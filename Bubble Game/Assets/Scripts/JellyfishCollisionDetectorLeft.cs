@@ -6,15 +6,13 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class JellyfishCollisionDetector : MonoBehaviour
 {
+    public Rigidbody2D JellyfishObstacle;
+
     public void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("JellyfishCollision"))
         {
-            JellyfishStop(gameObject.GetComponent<Rigidbody2D>());
-        }
-        else
-        {
-
+            JellyfishStop(JellyfishObstacle);
         }
     }
 

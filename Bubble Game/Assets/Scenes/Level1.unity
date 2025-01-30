@@ -4448,6 +4448,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 352ed8543a4c7d240a5cfbf4e942cf2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  JellyfishObstacle: {fileID: 0}
 --- !u!50 &1786746501
 Rigidbody2D:
   serializedVersion: 4
@@ -4487,6 +4488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 352ed8543a4c7d240a5cfbf4e942cf2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  JellyfishObstacle: {fileID: 0}
 --- !u!1 &1883347377
 GameObject:
   m_ObjectHideFlags: 0
@@ -5930,8 +5932,8 @@ Tilemap:
   - first: {x: 9, y: 1, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -6499,15 +6501,15 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 151
+  - m_RefCount: 152
     m_Data: {fileID: 11400000, guid: 6df4d2ef3a4cf9a47b3e4b57faf11aa4, type: 2}
-  - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: aaa4e256b5718e8419cbed9fc07e6813, type: 2}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileSpriteArray:
-  - m_RefCount: 151
+  - m_RefCount: 152
     m_Data: {fileID: 21300000, guid: 27497d195b9b47b4f86022cdf665a34d, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 21300000, guid: 5f0a78f2611c26a42bcab2a64d9c4d74, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileMatrixArray:
   - m_RefCount: 152
     m_Data:
