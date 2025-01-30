@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameTimer : MonoBehaviour
 {
     public float timeLimit = 60f; // Time in seconds
     private float currentTime;
+
+    // The name of the scene to load when time runs out
+    public string sceneToLoad = "GameOverScene";
 
     void Start()
     {
@@ -26,14 +30,10 @@ public class GameTimer : MonoBehaviour
 
     void EndGame()
     {
-        // Print a message to the console (you can replace this with a game over screen, etc.)
-        Debug.Log("Time's up! Game Over!");
+        // Print a message to the console (optional)
+        Debug.Log("Time's up! Changing to Game Over Scene!");
 
-        // End the game
-        // If you are testing in the Unity editor
-        UnityEditor.EditorApplication.isPlaying = false;
-
-        // If you are building the game, use:
-        // Application.Quit();
+        // Load the specified scene
+        SceneManager.LoadScene(sceneToLoad);
     }
 }
