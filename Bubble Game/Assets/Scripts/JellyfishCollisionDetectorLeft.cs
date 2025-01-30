@@ -3,31 +3,22 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D))]
 public class JellyfishCollisionDetector : MonoBehaviour
 {
-    private Rigidbody2D physicsBody = null;
-    public float speed = 3f;
-    public Collider2D BarrierSensor = null;
-    public LayerMask groundLayer = 0;
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Collision");
+        if (collision.gameObject.CompareTag("JellyfishCollision"))
+        {
 
-    }
-    public void MoveLeft()
-    {
-        //physicsBody.velocity.x = -1;
-
-        // make a variable to hold our velocity
-        // get the velocity from the rigidbody
-
-        Vector2 newVelocity = physicsBody.velocity;
-        newVelocity.x = -speed;
-
-        physicsBody.velocity = newVelocity;
+        }
     }
 
+    public void JellyfishStop(Rigidbody2D rb)
+    {
+        rb.isKinematic = true;
+        rb.velocity = new Vector2(0, 0);
+    }
 
 }
 
