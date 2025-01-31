@@ -6,6 +6,8 @@ public class CollisionDelete : MonoBehaviour
 {
     public AudioSource bubbleSound;
     public AudioSource sirenSong;
+    public AudioSource jellyfishBoop;
+    public AudioSource mermaidSong;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +37,16 @@ public class CollisionDelete : MonoBehaviour
         if (other.gameObject.CompareTag("Siren"))
         {
             sirenSong.Play();
+        }
+
+        if (other.gameObject.CompareTag("Obstacle"))
+        {
+            jellyfishBoop.Play();
+        }
+
+        if (other.gameObject.CompareTag("SceneChange"))
+        {
+            mermaidSong.Play();
         }
     }
 }
