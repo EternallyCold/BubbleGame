@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameTimer : MonoBehaviour
 {
-    public float timeLimit = 60f; // Time in seconds
+    public float timeLimit = 30f; // Time in seconds
     private float currentTime;
 
     // The name of the scene to load when time runs out
