@@ -31,8 +31,12 @@ public class TimerModifier : MonoBehaviour
 
             Debug.Log("Timer decreased!");
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
         // Check if the collided object has the "PowerUp" tag to increase the timer
-        else if (collision.gameObject.CompareTag(powerUpTag))
+        if (collision.gameObject.CompareTag(powerUpTag))
         {
             // Increase the timer by the specified amount
             timer.timeRemaining += timeIncreaseAmount;

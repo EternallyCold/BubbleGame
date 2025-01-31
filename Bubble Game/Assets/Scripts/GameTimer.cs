@@ -5,24 +5,23 @@ using UnityEngine.SceneManagement;
 
 public class GameTimer : MonoBehaviour
 {
-    public float timeLimit = 30f; // Time in seconds
-    private float currentTime;
+    public Timer timer;
 
     // The name of the scene to load when time runs out
-    public string sceneToLoad = "GameOverScene";
+    public string sceneToLoad = "LoseScreen";
 
     void Start()
     {
-        currentTime = timeLimit;
+        timer = FindObjectOfType<Timer>();
     }
 
     void Update()
     {
         // Decrease time
-        currentTime -= Time.deltaTime;
+        timer.timeRemaining -= Time.deltaTime;
 
         // Check if time is up
-        if (currentTime <= 0f)
+        if (timer.timeRemaining <= 0f)
         {
             EndGame();
         }

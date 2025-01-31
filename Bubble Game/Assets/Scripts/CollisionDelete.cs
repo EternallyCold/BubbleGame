@@ -28,7 +28,10 @@ public class CollisionDelete : MonoBehaviour
             Destroy(other.gameObject);
             Debug.Log("BUBBLES");
         }
+    }
 
+    private void OnCollisionEnter2D(Collision2D other)
+    {
         if (other.gameObject.CompareTag("Siren"))
         {
             sirenSong.Play();
