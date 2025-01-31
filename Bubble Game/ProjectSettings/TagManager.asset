@@ -9,6 +9,7 @@ TagManager:
   - Sound
   - SceneChange
   - JellyfishCollision
+  - Siren
   layers:
   - Default
   - TransparentFX

@@ -5,6 +5,7 @@ using UnityEngine;
 public class CollisionDelete : MonoBehaviour
 {
     public AudioSource bubbleSound;
+    public AudioSource sirenSong;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +27,11 @@ public class CollisionDelete : MonoBehaviour
             bubbleSound.Play();
             Destroy(other.gameObject);
             Debug.Log("BUBBLES");
+        }
+
+        if (other.gameObject.CompareTag("Siren"))
+        {
+            sirenSong.Play();
         }
     }
 }
