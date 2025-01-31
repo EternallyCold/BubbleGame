@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class CollisionDelete : MonoBehaviour
 {
+    public AudioSource bubbleSound;
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
@@ -22,6 +23,7 @@ public class CollisionDelete : MonoBehaviour
 
         if (other.gameObject.CompareTag("Bubble"))
         {
+            bubbleSound.Play();
             Destroy(other.gameObject);
             Debug.Log("BUBBLES");
         }
